@@ -6,7 +6,8 @@
 
 This repository contains my learning projects for the Dart programming language as part of the Holberton School Web Curriculum.
 
-Each folder represents a standalone module focused on understanding the basics of Dart syntax, functions, and core programming concepts.  
+Each folder represents a standalone module focused on understanding the basics of Dart syntax, functions, and core programming concepts.
+
 The projects cover topics such as data types, string manipulation, assertions, recursion, classes, and asynchronous programming, all essential foundations for Flutter and web application development.
 
 ## File Description
