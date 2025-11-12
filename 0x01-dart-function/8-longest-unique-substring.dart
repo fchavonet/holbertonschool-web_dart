@@ -6,7 +6,6 @@ String longestUniqueSubstring(String str) {
     String char = str[i];
 
     // Check if the character is already in the current substring.
-    current += char;
     if (current.contains(char)) {
       int index = current.indexOf(char);
       current = current.substring(index + 1);
