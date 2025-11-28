@@ -5,15 +5,28 @@ class User extends Password {
   String name = '';
   int age = 0;
   double height = 0;
-  String user_password = "";
+  String _userPassword = "";
 
   User({
     required this.id,
     required this.name,
     required this.age,
     required this.height,
-    required this.user_password,
-  }) : super(password: user_password);
+    required String user_password,
+  }) : super(password: user_password) {
+    _userPassword = user_password;
+  }
+
+  // Getter
+  String get user_password {
+    return _userPassword;
+  }
+
+  // Setter synchronisé avec Password(password)
+  set user_password(String newPassword) {
+    _userPassword = newPassword;
+    password = newPassword; // met à jour le Password du parent
+  }
 
   Map<String, dynamic> toJson() {
     final jsonMap = <String, dynamic>{};
